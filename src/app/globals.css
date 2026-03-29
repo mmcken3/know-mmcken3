@@ -32,6 +32,20 @@ body {
   background: #f59e0b;
 }
 
+/* Scroll-driven hero collapse — Chrome/Edge/Safari; Firefox gets static fallback */
+@supports (animation-timeline: scroll()) {
+  @keyframes hero-content-exit {
+    from { opacity: 1; transform: translateY(0) scale(1); }
+    to   { opacity: 0; transform: translateY(-50px) scale(0.95); }
+  }
+
+  .hero-scroll-out {
+    animation: hero-content-exit linear both;
+    animation-timeline: scroll(root);
+    animation-range: 8vh 55vh;
+  }
+}
+
 /* Blob ambient drift — relative offsets from each blob's starting left/top position */
 @keyframes blob1-drift {
   0%   { transform: translate(0, 0); }
