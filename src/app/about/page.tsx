@@ -4,8 +4,9 @@ import { ArrowRight } from 'lucide-react'
 
 const stack = [
   { category: 'Languages', items: ['Go', 'TypeScript', 'Python', 'SQL'] },
+  { category: 'Frameworks', items: ['Next.js', 'React'] },
   { category: 'Cloud & Infra', items: ['GCP', 'AWS', 'Kubernetes', 'Terraform'] },
-  { category: 'AI & Data', items: ['LLMs', 'RAG pipelines', 'BigQuery', 'Vertex AI'] },
+  { category: 'AI & Data', items: ['LLMs', 'MCP', 'RAG pipelines', 'BigQuery', 'Vertex AI'] },
   { category: 'Practices', items: ['Platform Engineering', 'DDD', 'Event-Driven', 'SRE'] },
 ]
 
@@ -33,13 +34,14 @@ export default function About() {
               <p>
                 I&apos;m Mitchell — a Senior Engineering Manager with deep roots in Go, backend
                 systems, and cloud architecture. I lead teams that ship impactful software at
-                scale, with a relentless focus on developer velocity and the kind of craft that
-                makes engineers proud of what they build.
+                scale, with a relentless focus on the kind of craft that makes engineers proud of
+                what they build.
               </p>
               <p>
-                My work lives at the intersection of technical depth and people leadership. I care
-                about clean architecture, thoughtful APIs, and resilient systems — but I care just
-                as much about building the kind of team where great engineers do their best work.
+                My recent focus has been on Developer Efficiency within a Platform Engineering
+                organization — building the internal tooling, infrastructure, and workflows that
+                let engineering teams move faster and with more confidence. I care about the
+                systems that make other systems better.
               </p>
               <p>
                 Outside of the terminal, I coach CrossFit and Olympic weightlifting, and compete
@@ -54,7 +56,7 @@ export default function About() {
             <div className="space-y-2">
               {[
                 { label: 'Role', value: 'Senior Engineering Manager' },
-                { label: 'Focus', value: 'Backend · Cloud · AI' },
+                { label: 'Focus', value: 'Developer Efficiency · Platform Engineering · AI' },
                 { label: 'Languages', value: 'Go · TypeScript · Python' },
                 { label: 'Location', value: 'United States' },
                 { label: 'Coaching', value: 'CrossFit · Olympic Weightlifting · Hyrox' },

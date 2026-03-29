@@ -6,15 +6,9 @@ import { GithubIcon, LinkedinIcon } from './icons'
 import { useTheme } from 'next-themes'
 import { useEffect, useState, useRef } from 'react'
 
-type Blob = {
-  id: number
-  color: string
-  left: string
-  top: string
-  size: string
-  opacity: number
-  duration: number
-}
+// ─── Blob config ──────────────────────────────────────────────────────────────
+
+type Blob = { id: number; color: string; left: string; top: string; size: string; opacity: number; duration: number }
 
 const darkBlobs: Blob[] = [
   { id: 1, color: '#f59e0b', left: '-5vw',  top: '-15vw', size: '70vw', opacity: 0.55, duration: 14 },
@@ -29,6 +23,8 @@ const lightBlobs: Blob[] = [
   { id: 3, color: '#fcd34d', left: '5vw',   top: '50vh',  size: '52vw', opacity: 0.60, duration: 23 },
   { id: 4, color: '#fed7aa', left: '-15vw', top: '35vh',  size: '42vw', opacity: 0.60, duration: 17 },
 ]
+
+// ─── Component ────────────────────────────────────────────────────────────────
 
 export default function Hero() {
   const { resolvedTheme } = useTheme()
@@ -64,7 +60,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-amber-50 dark:bg-stone-950">
 
-      {/* SVG filter definition — turbulence drives organic blob morphing */}
+      {/* SVG filter — turbulence drives organic blob morphing */}
       <svg className="absolute" style={{ width: 0, height: 0, position: 'absolute' }} aria-hidden="true">
         <defs>
           <filter id="blob-morph" x="-30%" y="-30%" width="160%" height="160%" colorInterpolationFilters="sRGB">
@@ -118,7 +114,7 @@ export default function Hero() {
         style={{ background: 'radial-gradient(ellipse at center, transparent 40%, var(--vignette) 100%)' }}
       />
 
-      {/* Content — hero-scroll-out drives the cinematic collapse on scroll */}
+      {/* Content */}
       <div className="hero-scroll-out relative z-10 text-center px-6 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
