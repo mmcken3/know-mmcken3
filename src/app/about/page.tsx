@@ -1,13 +1,33 @@
 import { FadeIn } from '@/components/FadeIn'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 const stack = [
-  { category: 'Languages', items: ['Go', 'TypeScript', 'Python', 'SQL'] },
-  { category: 'Frameworks', items: ['Next.js', 'React'] },
-  { category: 'Cloud & Infra', items: ['GCP', 'AWS', 'Kubernetes', 'Terraform'] },
-  { category: 'AI & Data', items: ['LLMs', 'MCP', 'RAG pipelines', 'BigQuery', 'Vertex AI'] },
-  { category: 'Practices', items: ['Platform Engineering', 'DDD', 'Event-Driven', 'SRE'] },
+  {
+    category: 'Languages & Frameworks',
+    items: ['Go', 'Python', 'TypeScript', 'React', 'Next.js', 'MySQL', 'Postgres', 'Redis', 'ElasticSearch'],
+  },
+  {
+    category: 'Cloud & Containers',
+    items: ['GCP', 'AWS', 'Kubernetes', 'Docker', 'Helm', 'GKE', 'Vertex AI', 'Cloud Functions', 'Dataflow', 'Lambda', 'Fargate', 'ECS', 'Kinesis'],
+  },
+  {
+    category: 'Data & AI',
+    items: ['BigQuery', 'Redshift', 'Databricks', 'LLMs', 'RAG Pipelines', 'MCP'],
+  },
+  {
+    category: 'DevOps & GitOps',
+    items: ['ArgoCD', 'Argo Rollouts', 'Flux CD', 'CircleCI', 'Jenkins', 'Terraform', 'CI/CD Pipeline Design'],
+  },
+  {
+    category: 'Platform & Infra',
+    items: ['Internal Developer Platforms', 'Progressive Delivery', 'FinOps', 'Observability & Monitoring', 'Capacity Planning', 'Developer Experience'],
+  },
+  {
+    category: 'Security & Compliance',
+    items: ['SOC2', 'HIPAA', 'Security Architecture', 'Audit Logging', 'Access Controls', 'Risk Management'],
+  },
 ]
 
 export default function About() {
@@ -17,14 +37,25 @@ export default function About() {
 
         {/* Header */}
         <FadeIn>
-          <h1 className="font-black tracking-tighter mb-16 leading-none">
-            <span className="block text-[clamp(3.5rem,9vw,9rem)] text-stone-900 dark:text-stone-50">
-              Engineering Leader.
-            </span>
-            <span className="block text-3xl md:text-5xl text-amber-500 dark:text-amber-400">
-              Coach.
-            </span>
-          </h1>
+          <div className="flex items-end gap-10 mb-16">
+            <h1 className="font-black tracking-tighter leading-none">
+              <span className="block text-[clamp(3.5rem,9vw,9rem)] text-stone-900 dark:text-stone-50">
+                Engineering Leader.
+              </span>
+              <span className="block text-3xl md:text-5xl text-amber-500 dark:text-amber-400">
+                Coach.
+              </span>
+            </h1>
+            <div className="hidden md:block flex-shrink-0 mb-2">
+              <Image
+                src="/mitch-photo.jpeg"
+                alt="Mitchell McKenzie"
+                width={160}
+                height={160}
+                className="rounded-2xl object-cover w-40 h-40"
+              />
+            </div>
+          </div>
         </FadeIn>
 
         {/* Bio */}
@@ -87,7 +118,7 @@ export default function About() {
           </h2>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {stack.map((group, i) => (
             <FadeIn key={group.category} delay={i * 0.08}>
               <h3 className="text-xs font-semibold tracking-wider uppercase text-stone-400 dark:text-stone-600 mb-4">

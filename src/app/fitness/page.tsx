@@ -4,14 +4,14 @@ import { ArrowRight } from 'lucide-react'
 const disciplines = [
   {
     title: 'CrossFit',
-    subtitle: 'Level 2 Coach',
+    subtitle: 'Level 1 Trainer',
     description:
       'CrossFit is where I started. I coach athletes from their first pull-up to competing at the regional level. The methodology is simple: constantly varied, functional movement, performed at high intensity. The coaching is anything but.',
     focus: ['Movement quality', 'Scaling for every athlete', 'Building capacity over time', 'Competition prep'],
   },
   {
     title: 'Olympic Weightlifting',
-    subtitle: 'Snatch · Clean & Jerk',
+    subtitle: 'USAW L1 Coach · Snatch · Clean & Jerk',
     description:
       'The two lifts. The snatch and clean & jerk are the most technically demanding barbell movements in existence. I coach the positions, the timing, and the patience it takes to actually get strong — not just look like you are.',
     focus: ['Technical positioning', 'Pulling mechanics', 'Percentage-based programming', 'Meet preparation'],
@@ -20,7 +20,7 @@ const disciplines = [
     title: 'Hyrox',
     subtitle: 'Competitor',
     description:
-      'Hyrox is a fitness race — 8km of running interspersed with 8 functional fitness stations. It rewards athletes who can run and work at threshold simultaneously. I train and compete, and I bring that experience to how I program for endurance-based athletes.',
+      'Hyrox is a fitness race — 8km of running interspersed with 8 functional fitness stations. It rewards athletes who can run and work at threshold simultaneously. I train and compete for fun and to improve my aerobic base for Crossfit. I bring that experience to how I program for endurance-based athletes, especially Crossfit athelets looking for something new.',
     focus: ['Threshold running', 'Pacing strategy', 'Functional station efficiency', 'Race nutrition'],
   },
 ]
