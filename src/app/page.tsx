@@ -7,11 +7,11 @@ const disciplines = [
   {
     title: 'Engineering Leadership',
     meta: 'Go · Cloud · Systems',
-    body: 'Leading backend and cloud engineering teams that ship at scale. I care about the craft — clean architecture, resilient systems, and the developer experience that makes engineers do their best work.',
+    body: 'Leading software engineering teams that ship at scale with a focus in platform, developer tooling and cloud engineering. I care about the craft — clean architecture, resilient systems, and the developer experience that makes engineers do their best work.',
     href: '/about',
   },
   {
-    title: 'AI & Cloud Architecture',
+    title: 'Architecture, AI & Tinkering',
     meta: 'LLMs · GCP · Distributed Systems',
     body: 'Building intelligent systems on modern cloud infrastructure. From LLM integrations to data pipelines that move with intention. The architecture is the product.',
     href: '/projects',
@@ -19,7 +19,7 @@ const disciplines = [
   {
     title: 'Fitness & Coaching',
     meta: 'CrossFit · Olympic Lifting · Hyrox',
-    body: 'CrossFit L2 coach. Olympic weightlifting coach. Hyrox competitor. The barbell teaches as much as the terminal — both reward consistency over intensity.',
+    body: 'CrossFit L1 trainer. USAW L1 Olympic weightlifting coach. Fitness competitor. The barbell and running shoes teach as much as the terminal — both reward consistency over intensity.',
     href: '/fitness',
   },
 ]
