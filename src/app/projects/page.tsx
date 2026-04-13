@@ -53,8 +53,16 @@ export default function Projects() {
             Work.
           </h1>
           <p className="text-stone-500 dark:text-stone-400 max-w-xl leading-relaxed mb-20">
-            Systems, tools, and products I&apos;ve built or led. Backend-heavy, cloud-native,
-            occasionally AI-powered. Go first, TypeScript and Python close behind.
+            A few recent personal and side projects — the things I build outside of work. Increasingly AI powered, testing out new flows in this upcmoing age. For the corporate resume,{' '}
+            <a
+              href="https://www.linkedin.com/in/mitchell-mckenzie-533292109/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-700 dark:text-stone-300 underline underline-offset-2 decoration-stone-300 dark:decoration-stone-700 hover:text-amber-600 dark:hover:text-amber-400 hover:decoration-amber-500 transition-colors duration-200"
+            >
+              LinkedIn
+            </a>{' '}
+            has the full picture.
           </p>
         </FadeIn>
 
