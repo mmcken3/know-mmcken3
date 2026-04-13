@@ -11,25 +11,28 @@ const projects: {
   status: 'live' | 'wip' | 'coming-soon'
 }[] = [
   {
-    title: 'Project Alpha',
+    title: 'RepwiseIQ',
     description:
-      'A placeholder for a real project. Add your Go microservice, platform tool, or AI-powered system here with a description of the problem it solves.',
-    tags: ['Go', 'gRPC', 'Kubernetes'],
-    status: 'coming-soon',
+      'Built for personal trainers and online coaches. Describe what you want, and get a complete, structured program that sounds like you — not like a generic template.',
+    tags: ['TypeScript', 'Next.js', 'Claude API', 'Supabase'],
+    link: 'https://repwiseiq.com',
+    status: 'live',
   },
   {
-    title: 'Project Beta',
+    title: 'LandwellAI',
     description:
-      'Another placeholder. This could be a cloud architecture project, a data pipeline, or an internal developer tool that shipped meaningful impact.',
-    tags: ['GCP', 'Terraform', 'BigQuery'],
-    status: 'coming-soon',
+      'AI-powered severance toolkit for laid-off and job-searching employees. Resume builder, job hunter, and interview practice — focused on using AI to improve your voice and work, not do the work for you.',
+    tags: ['TypeScript', 'Next.js', 'Claude API', 'Neon', 'Clerk'],
+    status: 'wip',
   },
   {
-    title: 'Project Gamma',
+    title: 'ARIA',
     description:
-      'An AI-powered project. LLM integration, RAG pipeline, or intelligent automation system built on top of modern foundation models.',
-    tags: ['AI', 'Python', 'Vertex AI'],
-    status: 'coming-soon',
+      'A self-hosted, open source personal AI operating system. ARIA combines a persistent AI with deep integrations across email, calendar, and tasks — surfacing a unified view of your work and taking action on your behalf, proactively and on demand.',
+    tags: ['Go', 'TypeScript', 'Claude API'],
+    github: 'https://github.com/mmcken3/ARIA',
+    link: 'https://aria-mmcken3.vercel.app/',
+    status: 'wip',
   },
 ]
 

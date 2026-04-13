@@ -10,7 +10,6 @@ import { ThemeToggle } from './ThemeToggle'
 const links = [
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
   { href: '/fitness', label: 'Fitness' },
 ]
 

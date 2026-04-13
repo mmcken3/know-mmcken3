@@ -11,7 +11,7 @@ const disciplines = [
     href: '/about',
   },
   {
-    title: 'Architecture, AI & Tinkering',
+    title: 'Architecture, AI & Building',
     meta: 'LLMs · GCP · Distributed Systems',
     body: 'Building intelligent systems on modern cloud infrastructure. From LLM integrations to data pipelines that move with intention. The architecture is the product.',
     href: '/projects',
